@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>Claim Your Package</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LANGUAGE SCREEN -->
+    <section id="languageScreen" class="language-screen">
+        <div class="language-box">
+
+            <div class="mini-logo">CYP</div>
+
+            <h1>CLAIM YOUR PACKAGE</h1>
+
+            <p class="language-subtitle">
+                Choose your language
+            </p>
+
+            <div class="language-buttons">
+
+                <button onclick="selectLanguage('es')">
+                    🇪🇸 Español
+                </button>
+
+                <button onclick="selectLanguage('en')">
+                    🇬🇧 English
+                </button>
+
+                <button onclick="selectLanguage('pt')">
+                    🇵🇹 Português
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HOMEPAGE -->
+    <main id="home" class="home hidden">
+
+        <div class="background"></div>
+        <div class="overlay"></div>
+
+        <header class="topbar">
+            <div class="brand">
+                CLAIM YOUR PACKAGE
+            </div>
+
+            <button
+                class="language-switch"
+                onclick="showLanguages()">
+                EN
+            </button>
+        </header>
+
+
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow" id="eyebrow">
+                    YOUR PACKAGE AWAITS
+                </span>
+
+                <h2 id="heroTitle">
+                    CLAIM YOUR PACKAGE
+                </h2>
+
+                <p id="heroText">
+                    Continue to WhatsApp to claim your package.
+                </p>
+
+                <button
+                    class="claim-button"
+                    onclick="claimPackage()">
+
+                    <span id="claimText">
+                        CLAIM NOW
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+            <span>
+                © 2026 Claim Your Package
+            </span>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
